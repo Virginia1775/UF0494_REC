@@ -4,7 +4,7 @@ public class FuncionesAuxiliares {
 		
 		
 		public double calculoNivelMaxCO2 (int año) {
-			double res = 0.35;
+			double res = 0.035;
 			if (año<1950) {
 				throw new ArithmeticException("Normativa inexistente");
 			} else if (año<1986) {
