@@ -29,6 +29,28 @@ public class Funciones {
 	}
 	
 	// Escribe las sentencias de los apartados 1 y 2
+	public static void vehiculoAfectadoAirbag(int año) {
+		String mensaje="";
+		if (año<2000) {
+			mensaje="No hay vehículos afectados";
+		} else if ( año<2005) {
+			mensaje="Los vehículos  de marca Seat y Opel afectados";
+		} else if(año<2015) {
+			mensaje= "Los vehículos de marca Renault están afectados";
+		} else {
+			mensaje= "Retirada del carnet y de 3 a 6 meses de cárcel";
+		}
+		System.out.printf("En el año %.2f con respecto al problema del airbag %s\n",año,mensaje);
+	}
+	
+	public static void calcularCosteTotal(int costes[]) {
+		for (int i = 0; i < costes.length; i++) {
+			costes[i]=(costes[i]+costes[i]);
+		}
+		
+		
+	}
+	
 	
 
 }
